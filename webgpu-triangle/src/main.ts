@@ -22,6 +22,7 @@ async function main() {
     alphaMode: "premultiplied",
   });
 
+  // render the triangle
   render(device, context, presentationFormat);
 }
 
@@ -100,7 +101,7 @@ function render(
     device.queue.submit([commandEncoder.finish()]);
     requestAnimationFrame(frame);
   };
-
+  //to start the animation
   requestAnimationFrame(frame);
 }
 
